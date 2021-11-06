@@ -1,0 +1,22 @@
+git committekrar çalıştırıp tekrar kontrol ediyoruz.
+Sonuç olarak, yeni dosya evreleme alanı'yeden yerel depo. Bekleyen başka savaşta Git, çalışma gidişi temiz olarak işaretler. Ancak dosyamız henüz Github'da değil.
+
+~ $ git add .
+~ $ git commit -m "git-commands"
+[master 2cd0af0] git-commands
+ 1 file changed, 1 insertion(+)
+ create mode 100644 start.txt
+~ $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+nothing to commit, working tree clean
+Yapmamız gereken son bir adım var ve bu da push etme işlemi. git push origin masterdikkati çekmekten kaçınıyoruz. “origin”, depomuzun Github'ı ifade eder. “master”, depodaki şube adını ifade eder. Her şeyin doğru şekilde yaptığı yeni dosya, repository'mizin Github kopyasında olmalıdır.
+
+~ $ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/semih/github-demo.git
+   785389b..2cd0af0  master -> master
