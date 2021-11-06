@@ -1,0 +1,45 @@
+Temel İş Akışı (dosyayla çalışması)
+git add -A
+git add -U
+
+
+Temel İş Akışı (dosyayı bırakma)
+İş dünyasında, git eklenti sistemlerini evreleme alanı'ya taşırız. Bazen bu ürünleri olabilir istemeyiz veya taşımışız. Bütün malzeme olan şey tamamlanabilir git reset HEAD <file>...ve dosyaların tanımsız hale getirilmesi. Bunun yanında, git checkout -- <file>...çalışma dizini'ni ana ve seçimi iptal eder.
+
+
+
+Dosyalarla Çalışmak (dosya silme)
+git rm <file>...
+git reset HEAD <file>...ve git checkout -- <file>...komutlarını kullanarak, silinen dosyaları geri alabiliriz.
+
+
+
+Dosyalarla Çalışmak (klasör silme)
+git rm -rf <folder>...
+
+
+
+İzlenmemiş,sahne alınmış ve sahnesiz(sahne'e alınmamış) arasındaki farklar birbiriyle bağlantılı:
+
+İzlenmeyen Git'te değil.
+Stage'e alınmamış Git'te ancak taahhüt için işaretlenmemiş.
+Stage'e alınmış ise Git'te ve taahhüt için işaretlenmiştir.
+
+
+Git Tarihçe
+git help log
+git log
+git log --abbrev-commit
+git log --oneline --graph --decorate
+git log --all --graph --decorate --oneline
+git log --since="3 days ago"
+git log -- <file>
+git log --follow -- <file>
+
+
+Git Takma Adlar
+Bu komutu çalıştırdıktan sonra git histkısayolu kullanın.
+git config --global alias.hist "log --all --graph --decorate --oneline"
+Kısayollar .gitconfig dosyasından kontrol edilebilir.
+
+mate ~/.gitconfig
