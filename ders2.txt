@@ -1,0 +1,25 @@
+Bir dosya oluşturduk ve içine bir şeyler yazdık. git statusKullanarak, aracımız şubesinin üstünde, çalışma dizini, evreleme alanı, yerel depo ve uzak depo arasında herhangi bir farklı olup öğleden önce. Takip etmek için git add <file>...kullanabiliriz.
+
+~ $ echo "Test Git Quick Start Demo" >> start.txt
+~ $ ls
+.git		README.md	start.txt
+~ $ cat start.txt
+Test Git Quick Start Demo
+~ $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	start.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+git add <file>... Dosyayı çalıştırdığımızda, Git bize evreleme alanı'da yeni bir dosya olduğunu söyler. “Yapılacak değişiklikler” uyarısı ile dosyalanmaz. Bu dosya istifleme alanı'nda işlem yapılmak üzere hazırlanır.
+
+~ $ git add start.txt 
+~ $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+	new file:   start.txt
