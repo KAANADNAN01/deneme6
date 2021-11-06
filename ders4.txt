@@ -1,0 +1,63 @@
+Tanrı Git Komutları
+Yeni Bir Proje Başlangıcı
+Sıfırdan (Henüz hiç kodu olmayan)
+Localinde Kodu Olan
+Github Projesi (çatal ve klon)
+Temel İş Akışı (add, commit, push, pull)
+Dosyalarla Çalışmak (yeniden adlandır, taşı & sil)
+Git Tarihçe ve Takma Adlar
+Gönderilmek İstenmeyen Dosyalar
+
+
+Yeni Bir Proje Başlangıcı (Sıfırdan)
+“git init” ile yeni bir proje oluştur.
+
+workspace $ git init fresh-project
+Initialized empty Git repository in /Users/semih/workspace/fresh-project/.git/
+workspace $ ls
+fresh-project
+workspace $cd fresh-project/
+fresh-project $ ls -al
+total 0
+drwxr-xr-x  3 semih  staff   96  7 Oca 00:58 .
+drwxr-xr-x  6 semih  staff  192  7 Oca 00:58 ..
+drwxr-xr-x  9 semih  staff  288  7 Oca 00:58 .git
+fresh-project $cd .git/
+.git $ls
+HEAD		description	info		refs
+config		hooks		objects
+git status alarm bize master branch'inde söyler.
+
+.git $ cd ..
+fresh-project $ git status
+On branch master
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+Git, izlenme dosyaları yakalar.
+
+fresh-project $ mate hipster.txt
+fresh-project $ git status
+On branch master
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hipster.txt
+nothing added to commit but untracked files present (use "git add" to track)
+Taahhüt edilecek değişiklikler (yapılan uygulama) bu yeni dosya (“hipster.txt”) anlamına gelir ve artık Git evreleme alanındadır. Taahhüt yapılmaması bir dosyamız vardır, henüz henüz işlenmemiştir.
+
+fresh-project $ git add hipster.txt 
+fresh-project $ git status
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   hipster.txt
+Yalnızca git commityazarsak editör taahhüt edilen listeler ve dosyanın üst satırlarına taahhüt mesajını yazabilir.
+
+fresh-project $ git commit (file is opening here with our default text editor)
+[master (root-commit) 2296291] Adding new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hipster.txt
+fresh-project $ git status
+On branch master
+nothing to commit, working tree clean
