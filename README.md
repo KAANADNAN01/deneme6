@@ -1,0 +1,1 @@
+#  denemelerin sonunda başarılı olan
