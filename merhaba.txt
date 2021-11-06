@@ -1,0 +1,2 @@
+ders 1
+-bu bir deneme metnidir.
