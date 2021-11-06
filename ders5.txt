@@ -1,0 +1,48 @@
+Yeni Bir Proje Başlangıcı (Localinde Kodu Olan)
+Projede oynanırken git initçalıştırırız. Her şeyden önce izlenmeyen dosyaları görürüz. git add .evreleme alanı'ya gönderir. git commitOnları kullanarak onları çalıştırın ve müdahalede bulunun git push.
+
+project-folder $ git init
+Initialized empty Git repository in /Users/semih/workspace/initializr/.git/
+project-folder $ git status
+On branch master
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.htaccess
+	404.html
+	apple-touch-icon.png
+	browserconfig.xml
+	crossdomain.xml
+	css/
+	favicon.ico
+	fonts/
+	humans.txt
+	index.html
+	js/
+	robots.txt
+	tile-wide.png
+	tile.png
+nothing added to commit but untracked files present (use "git add" to track)
+project-folder $ git add .
+project-folder $ git commit -m "my first commit message"
+
+
+Yeni Bir Proje Başlangıcı (çatal ve klon)
+Bu bölüm, Github'da bir projeye nasıl gelineceğiyle ilgili.
+Github tutkunu (https://github.com/scm-ninja/starter-web) İçin tıklanır.
+Son olarak, git cloneçalıştırılır.
+
+~ $ git clone https://github.com/semih/starter-web.git
+Cloning into 'starter-web'...
+remote: Enumerating objects: 39, done.
+remote: Total 39 (delta 0), reused 0 (delta 0), pack-reused 39
+Unpacking objects: 100% (39/39), done.
+~ $ cd starter-web
+starter-web $ 
+starter-web $ ls
+404.html				fonts
+README.md				humans.txt
+apple-touch-icon-precomposed.png	index.html
+crossdomain.xml				js
+css					robots.txt
+favicon.ico				simple.html
