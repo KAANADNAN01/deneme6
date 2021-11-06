@@ -1,0 +1,8 @@
+Gönderilmek İstenmeyen Dosyalar ve Klasörler
+.DS Mağazası gibi sitelerden ağlarız. ls -alsistem dosyaları ve klasörler dahil tüm dosyaları listeler. Bunun için “.gitignore” dosyası oluşturmamız gerekiyor. mate .gitignoredüzenleme ve kaydedebiliriz. Yine bu dosyaya .DS_Store yazmamız gerekiyor. Daha sonra git add .gitignoreuyarıyla ekliyoruz.
+
+.gitignore dosyasında * kullanabiliriz. Örneğin, .log uzantılı log dosyalarımız olabilir. Bu dosyaların push edilmesindesak, * .log deyimiyle hariç tutulabilecek bir çalışma alanı'te log dosyalarımız ve günlüğüne sahip olan bir dosya sisteminden oluşan bir log /sistem .gitign kapsamlına bilgi eklenmemiz gerekir. Aşağıdaki komutları çalıştırıldıktan sonra, günlük klasörünün push komutu(aktar) görülür.
+
+git add .
+git status
+git commit -am "Excluding log file directory"
