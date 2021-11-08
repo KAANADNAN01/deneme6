@@ -1,1 +1,1 @@
-#  denemelerin sonunda başarılı olan
+LÜTFEN  DEĞİŞİKLİK YAMADAN ÖNCE İLİGİLİ KİŞİLERE BİLDİRİNİZ (DARİCİYY VE KAANADNAN01)
